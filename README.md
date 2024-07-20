@@ -6,3 +6,6 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 2. `evenodd.cpp` Convert an array such that all the even elements are grouped together followed by the odd elements.
 3. `presum.cpp` Find the prefix sum of an array.
 4. `secLargest.cpp` Find the second Largest and Smallest element in an array.
+5. `dupe.cpp` Read n numbers from a file and output 
+    a. The number of duplicate elements in the array.
+    b. The most frequent element in the array.
