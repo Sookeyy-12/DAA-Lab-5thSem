@@ -2,6 +2,9 @@
 using namespace std;
 
 void solve(vector<int>& numbers) {
+    cout << "Content of the array: " << endl;
+    for (auto n: numbers) cout << n << " ";
+    cout << endl;
     unordered_map<int, int> mp;
     for (auto n: numbers) {
         mp[n]++;
