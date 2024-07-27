@@ -29,5 +29,6 @@ int main() {
     }
     inputFile.close();
     solve(array);
+    cout << "Binary form of first "  << n << " decimals have been saved in output1.dat";
     return 0;
 }
