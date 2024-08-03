@@ -10,4 +10,7 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 
 ## Lab 2 | 27-07-2024
 1. `d2b.cpp` WAP to convert the first `n` decimal numbers of a disc file to binary using recursion. Store the binary value in separate disc file.
-2. `agcdb.cpp` WAP to find GCD of first `n` pairs of numbers from a file using recursion. Save the output to file.
+2. `agcdb.cpp` WAP to find GCD of first `n` pairs of numbers from a file using recursion. Save the output to file.  
+
+## Lab 3 | 03-08-2024
+1. `Rotate.cpp` WAP to shift the elements of an array to the right or left by `k` positions.
