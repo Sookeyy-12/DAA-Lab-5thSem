@@ -14,3 +14,4 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 
 ## Lab 3 | 03-08-2024
 1. `Rotate.cpp` WAP to shift the elements of an array to the right or left by `k` positions.
+2. `recrev.cpp` WAP to reverse an array using recursion.
