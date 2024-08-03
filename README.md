@@ -13,5 +13,6 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 2. `agcdb.cpp` WAP to find GCD of first `n` pairs of numbers from a file using recursion. Save the output to file.  
 
 ## Lab 3 | 03-08-2024
-1. `Rotate.cpp` WAP to shift the elements of an array to the right or left by `k` positions.
+1. `RotateRight.cpp` WAP to shift the elements of an array to the right by `k` positions.
+1. `RotateLeft.cpp` WAP to shift the elements of an array to the left by `k` positions.
 2. `recrev.cpp` WAP to reverse an array using recursion.
