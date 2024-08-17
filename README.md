@@ -18,7 +18,9 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 2. `recrev.cpp` WAP to reverse an array using recursion.
 
 ## Lab 4 | 10-08-2024
-1. `merge.c` WAP to sort an array using Merge Sort.
+1. `merge.cpp` WAP to sort an array using Merge Sort.
 
 ## Lab 5 | 17-08-2024
-1. `quick.c` WAP to sort an array using Quick Sort.
+1. `quick.cpp` WAP to sort an array using Quick Sort.
+2. `mul2dig.cpp` WAP to multiply two numbers using Divide and Conquer.
+3. `maxsub.cpp` Find the Max value of Sub Array.
