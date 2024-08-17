@@ -23,4 +23,4 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 ## Lab 5 | 17-08-2024
 1. `quick.cpp` WAP to sort an array using Quick Sort.
 2. `mul2dig.cpp` WAP to multiply two numbers using Divide and Conquer.
-3. `maxsub.cpp` Find the Max value of Sub Array.
+3. `maxsub.cpp` Find the Maximum Sum Subarray.
