@@ -24,3 +24,14 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 1. `quick.cpp` WAP to sort an array using Quick Sort.
 2. `mul2dig.cpp` WAP to multiply two numbers using Divide and Conquer.
 3. `maxsub.cpp` Find the Maximum Sum Subarray.
+
+## Lab 6 | 24-08-2024
+
+## Lab 7 | 31-08-2024
+1. `huff.cpp` Implement Huffman Coding for sequences:
+    - `BCCABBDDAECCBBAEDDCC`
+    - `122341322144344`
+2. `knap.cpp` Implement Fractional Knapsack with following strategies
+    - Non-increasing order of profit
+    - Non-decreasing order of weight
+    - Non-increasing order of profit/weight ratio
