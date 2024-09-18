@@ -4,37 +4,41 @@ using namespace std;
 void merge(vector<int>& arr, int lo, int mid, int hi) {
     int n1 = mid-lo+1;
     int n2 = hi-mid;
-    vector<int> leftArr(arr.begin(), arr.begin()+mid+1);
-    vector<int> rightArr(arr.begin()+mid+1, arr.end());
-    int i = 0, j = 0;
-    int k = lo;
+    vector<int> leftArr(n1), rightArr(n2);
+    for (int i=0; i < n1; i++) {
+        leftArr[i] = arr[i+lo];
+    }
+    for (int j = 0; j < n2; j++) {
+        rightArr[j] = arr[mid+1+j];
+    }
+    int i = 0, j = 0, k = 0;
     while(i<n1 && j < n2) {
         if(leftArr[i] < rightArr[j]) {
             arr[k] = leftArr[i];
-            i++;k++;
+            i++;
         } else {
             arr[k] = rightArr[j];
-            k++;j++;
+            j++;
         }
+        k++;
     }
     while(i<n1) {
         arr[k] = leftArr[i];
         i++;k++;
-    } 
+    }
     while(j<n2) {
         arr[k] = rightArr[j];
         j++;k++;
-    } 
+    }
 }
 
 void mergeSort(vector<int>& arr, int lo, int hi) {
-    if(lo>=hi) {
-        return;
+    if (lo<hi) {
+        int mid = (lo + hi)/2;
+        mergeSort(arr, lo, mid);
+        mergeSort(arr, mid+1, hi);
+        merge(arr, lo, mid, hi);
     }
-    int mid = lo + (hi-lo)/2;
-    mergeSort(arr, lo, mid);
-    mergeSort(arr, mid+1, hi);
-    merge(arr, lo, mid, hi);
 }
 
 int main()
@@ -53,3 +57,39 @@ int main()
     cout << endl;
     return 0;
 }
+
+// void merge(vector<int>& arr, int lo, int mid, int hi) {
+//     int n1 = mid-lo+1;
+//     int n2 = hi-mid;
+//     vector<int> leftArr(arr.begin(), arr.begin()+mid+1);
+//     vector<int> rightArr(arr.begin()+mid+1, arr.end());
+//     int i = 0, j = 0;
+//     int k = lo;
+//     while(i<n1 && j < n2) {
+//         if(leftArr[i] < rightArr[j]) {
+//             arr[k] = leftArr[i];
+//             i++;k++;
+//         } else {
+//             arr[k] = rightArr[j];
+//             k++;j++;
+//         }
+//     }
+//     while(i<n1) {
+//         arr[k] = leftArr[i];
+//         i++;k++;
+//     } 
+//     while(j<n2) {
+//         arr[k] = rightArr[j];
+//         j++;k++;
+//     } 
+// }
+
+// void mergeSort(vector<int>& arr, int lo, int hi) {
+//     if(lo>=hi) {
+//         return;
+//     }
+//     int mid = lo + (hi-lo)/2;
+//     mergeSort(arr, lo, mid);
+//     mergeSort(arr, mid+1, hi);
+//     merge(arr, lo, mid, hi);
+// }

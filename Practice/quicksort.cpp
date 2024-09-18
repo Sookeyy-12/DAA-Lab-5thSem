@@ -4,10 +4,10 @@ using namespace std;
 int partition(vector<int>& arr, int lo, int hi) {
     int piv = arr[hi];
     int i = lo-1;
-    for (int j = lo; j <=hi; j++) {
+    for (int j = lo; j < hi; j++) {
         if(arr[j] < piv) {
             i++;
-            swap(arr[i], arr[j]);
+            swap(arr[j], arr[i]);
         }
     }
     i++;
@@ -33,3 +33,26 @@ int main() {
     }
     return 0;
 }
+
+
+// int partition(vector<int>& arr, int lo, int hi) {
+//     int piv = arr[hi];
+//     int i = lo-1;
+//     for (int j = lo; j <=hi; j++) {
+//         if(arr[j] < piv) {
+//             i++;
+//             swap(arr[i], arr[j]);
+//         }
+//     }
+//     i++;
+//     swap(arr[i], arr[hi]);
+//     return i;
+// }
+
+// void quickSort(vector<int>& arr, int lo, int hi) {
+//     if(lo<hi) {
+//         int pivInd = partition(arr, lo, hi);
+//         quickSort(arr, lo, pivInd-1);
+//         quickSort(arr, pivInd+1, hi);
+//     }
+// }
