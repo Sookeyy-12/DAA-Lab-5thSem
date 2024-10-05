@@ -40,3 +40,6 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 1. `jobseq.cpp` Implement Job Sequencing Algorithm.
 2. `prims.cpp` Implement Prims Algorithm to find Minimum Spanning Tree and its sum.
 3. `kruskals.cpp` Implement Kruskal's Algorithm to find Minimum Spanning Tree and its sum.
+
+## Lab 9 | 05-10-2024
+1. `dijkstra.cpp` Implement Dijkstra's Algorithm to find the shortest path from a source node to all other nodes.

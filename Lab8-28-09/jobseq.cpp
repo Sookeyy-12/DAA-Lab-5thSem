@@ -24,7 +24,7 @@ void solve(vector<pair<int, pair<int, int>>> &prof_job_dead, int n)
     }
     for (int i = 0; i < n; i++)
         if (slot[i])
-            cout << prof_job_dead[result[i]].second.first << " ";
+            cout << prof_job_dead[result[i]].second.first << "->";
 }
 
 int main()
