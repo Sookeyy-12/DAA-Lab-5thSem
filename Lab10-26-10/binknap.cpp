@@ -2,9 +2,9 @@
 using namespace std;
 
 void solve(int n, int w, vector<int>& profit, vector<int>& weight) {
-    vector<int> dp(n+1, 0);
+    vector<int> dp(w+1, 0);
     for (int i = 1; i <= n; i++) {
-        for (int j = w; j >= 0; j--) {
+        for (int j = w; j >= weight[i-1]; j--) {
             if (weight[i-1] <= j) {
                 dp[j] = max(dp[j], dp[j-weight[i-1]] + profit[i-1]);
             }

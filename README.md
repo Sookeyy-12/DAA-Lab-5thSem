@@ -44,6 +44,11 @@ All the programs done in Design and Analysis of Algorithms Lab in my 5th Semeste
 ## Lab 9 | 05-10-2024
 1. `dijkstra.cpp` Implement Dijkstra's Algorithm to find the shortest path from a source node to all other nodes.
 
-## Lab 11 | 26-10-2024
+## Lab 10 | 26-10-2024
 1. `binknap.cpp` Implement 0/1 Knapsack Problem using Dynamic Programming.
 2. `mcm.cpp` Implement Matrix Chain Multiplication using Dynamic Programming.
+
+## Lab 11 | 02-11-2024
+1. `floyd.cpp` Implement Floyd's Algorithm to find the shortest path between all pairs of nodes.
+2. `lcs.cpp` Implement Longest Common Subsequence using Dynamic Programming.
+3. `msg.cpp` Multi Stage Graph Problem.

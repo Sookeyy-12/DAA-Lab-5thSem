@@ -4,8 +4,8 @@ using namespace std;
 void solve(vector<pair<int, pair<int, int>>> &prof_job_dead, int n)
 {
     sort(prof_job_dead.rbegin(), prof_job_dead.rend());
-    int result[n];
-    bool slot[n];
+    vector<int> result(n, -1);
+    vector<bool> slot(n, false);
     for (int i = 0; i < n; i++)
         slot[i] = false;
 
@@ -22,9 +22,14 @@ void solve(vector<pair<int, pair<int, int>>> &prof_job_dead, int n)
             }
         }
     }
-    for (int i = 0; i < n; i++)
-        if (slot[i])
-            cout << prof_job_dead[result[i]].second.first << "->";
+    for (int i = 0; i < n; i++) {
+        if (slot[i]) {
+            cout << prof_job_dead[result[i]].second.first << " ";
+            if (i < n - 1 && slot[i + 1]) {
+                cout << "->";
+            }
+        }
+    }
 }
 
 int main()
