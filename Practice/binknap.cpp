@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solve(int n, int w, vector<int>& profit, vector<int>& weight) {
+void solve(int n, int w, vector<int> profit, vector<int> weight) {
     vector<int> dp(w+1, 0);
-    for (int i = 0; i < n; i++) {
+    for (int i =0 ; i < n; i++) {
         for (int j = w; j >= weight[i]; j--) {
-            dp[j] = max(dp[j], dp[j-weight[i]] + profit[i]);
+            dp[j] = max(dp[j], dp[j-weight[i]]+profit[i]);
         }
     }
-    cout << "Max Profit: " << dp[w] << endl;
+    cout << "Max Profit" << dp[w] << endl;
 }
 
 int main() {
